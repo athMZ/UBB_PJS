@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elapsed Time</title>
+</head>
+
+<body>
+    <p id="display"></p>
+
+    <script>
+        async function displayElapsedTime() {
+            let startTime = Date.now();
+            while (true) {
+                let elapsedTime = Date.now() - startTime;
+
+                document.getElementById("display").textContent = `Elapsed time: ${elapsedTime} ms`;
+
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+        }
+
+        displayElapsedTime();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display As</title>
+</head>
+
+<body>
+    <p id="display"></p>
+
+    <script>
+        async function displayAs() {
+            for (let i = 0; i < 5; i++) {
+                document.getElementById("display").textContent += 'a';
+                await new Promise(resolve => setTimeout(resolve, 10));
+            }
+        }
+
+        async function displayLoop() {
+            while (true) {
+                await displayAs();
+                document.getElementById("display").textContent += '\n';
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+        }
+
+        displayLoop();
+    </script>
+</body>
+
+</html>
