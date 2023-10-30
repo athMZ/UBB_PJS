@@ -47,5 +47,8 @@ readerStream.on('data', function (chunk) {
 
     console.log(transformedData);
 
+    const writerStream = fs.createWriteStream('./output.txt');
+    writerStream.write(transformedData, 'UTF8');
+
     console.log('\n#####################\n');
 });
