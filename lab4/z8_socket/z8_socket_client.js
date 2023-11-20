@@ -1,3 +1,4 @@
+//Za pomocą gniazda (moduł net) prześlij informacje pomiędzy klientem i serwerem
 const net = require('net');
 
 const client = net.connect({ port: 8107, host: 'localhost' }, () => {

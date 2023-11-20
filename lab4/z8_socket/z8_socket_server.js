@@ -1,4 +1,6 @@
+//Za pomocą gniazda (moduł net) prześlij informacje pomiędzy klientem i serwerem
 const net = require('net');
+
 const server = net.createServer((client) => {
 
     console.log('Nawiązano połączenie');
