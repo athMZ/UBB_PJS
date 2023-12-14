@@ -1,3 +1,4 @@
+//8. Przerób klasy car i truck do postaci modułu – zaimportuj klasy
 import { Car, Truck } from './module';
 
 let car1 = new Car("Ford", "Mustang", 100000);
