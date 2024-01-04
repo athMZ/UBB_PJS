@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server application to scrape data and prepare it for display.",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build_run": "tsc & node index.js"
+  },
+  "author": "Mikołaj Zuziak",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "node-json-db": "^2.2.0",
+    "playwright": "^1.37.1"
+  },
+  "devDependencies": {
+    "@types/datatables.net": "^1.10.24",
+    "@types/jquery": "^3.5.18",
+    "@types/node": "^20.6.0",
+    "typescript": "^5.2.2"
+  }
+}
